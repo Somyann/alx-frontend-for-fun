@@ -1,0 +1,14 @@
+// assigning margin using sass mixin
+
+@mixin margin($leftRight) {
+  margin-left: $leftRight;
+  margin-right: $leftRight;
+}
+
+body {
+  @include margin(10px);
+}
+
+div {
+  @include margin(15px);
+}
